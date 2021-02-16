@@ -7,28 +7,29 @@ class DeliveryAvailabilityController < ApplicationController
 
     polygon_point = [
       {
-        lat: 49.252311,
-        lng: -123.045680
+        lat: 49.297361,
+        lng: -123.090682
       },
       {
-        lat: 49.256240,
-        lng: -123.020976
+        lat: 49.250460,
+        lng: -123.089365
       },
       {
-        lat: 49.242627,
-        lng: -123.014273
+        lat: 49.218333,
+        lng: -122.988255
       },
       {
-        lat: 49.230514,
-        lng: -123.015907
+        lat: 49.248132,
+        lng: -122.974992
       },
       {
-        lat: 49.230661,
-        lng: -123.050476
+        lat: 49.285447,
+        lng: -122.980697
       },
       {
-        lat: 49.248511,
-        lng: -123.089339
+        lat:49.299671,
+        lng: -122.986697
+
       }
     ]
     polygon_coords = polygon_point.map do |point|
