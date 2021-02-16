@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FreshPrepTest</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="/">
+      <img src="/images/delivery.png" width="30" height="30">
+      </a>
+    </nav>
+    <% flash.each do |type, msg| %>
+      <div class="alert  alert-<%=type%> text-center col-md-4 mt-4 flash-msg">
+        <%= msg %>
+      </div>
+    <% end %>
+    <%= yield %>
+  </body>
+</html>
