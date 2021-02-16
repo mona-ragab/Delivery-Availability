@@ -1,0 +1,10 @@
+<div class="img-center">
+  <img src="/images/delivery.png" width="500" class="ml-5 mt-5 ">
+</div>
+<div class="col-md-4 mt-5 ml-5 form-position">
+  <%= form_with(url: "/delivery_supported", method: "post", data: { remote: false }, html:{class: "form-group"} ) do %>
+  <%= label_tag(:Address, "Please Enter your Address:") %>
+  <%= text_field_tag(:address, "", class: 'form-control', required:true) %>
+  <%= submit_tag("Check coverage", class:"btn btn-primary mb-2 mt-2") %>
+  <% end %>
+</div>
